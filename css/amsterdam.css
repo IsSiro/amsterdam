@@ -1,0 +1,497 @@
+body {
+	font-family: 'Amaranth', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #000;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+ #magicArrow {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+}
+
+/* Header */
+
+.header {
+	background: url('../img/amsterdam_header_background.png') no-repeat;
+	background-size: cover;
+}
+
+.name {
+	padding-top: 150px;
+	padding-bottom: 280px;
+}
+
+.color {
+	font-size: 0;
+	text-transform: uppercase;
+}
+
+.header_title {
+	color: #fff;
+	font-size: 14vh;
+	font-family: 'Aclonica', sans-serif;
+}
+
+.header_title:hover {
+	cursor: default;
+}
+
+.yellow:hover {
+	color: #e0d921;
+}
+
+.blue:hover {
+	color: #2133e0;
+}
+
+.green:hover {
+	color: #33e021;
+}
+
+.orange:hover {
+	color: #e07b21;
+}
+
+.violet:hover {
+	color: #a321e0;
+}
+
+.red:hover {
+	color: #e02121;
+}
+
+.cian:hover {
+	color: #21e0d0;
+}
+
+/* Menu */
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav li {
+	list-style: none;
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	font-size: 22px;
+	border: 2px solid #000;
+}
+
+.nav li:nth-child(1),
+.nav li:nth-child(2),
+.nav li:nth-child(3) {
+	border-right: none;
+}
+
+.nav a {
+	color: #fff;
+	display: block;
+	padding: 15px 0;
+	text-decoration: none;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+.nav_tours:hover a{
+	background-color: rgba(54, 217, 100, 0.3);
+	color: #36D964;
+}
+
+.nav_about:hover a{
+	background-color: rgba(224, 123, 33, 0.3);
+	color: #e07b21;
+}
+
+.nav_reviews:hover a{
+	background-color: rgba(176, 64, 247, 0.3);
+	color: #B040F7;
+}
+
+.nav_contacts:hover a{
+	background-color: rgba(224, 33, 33, 0.3);
+	color: #e02121;
+}
+
+.dropdown {
+	display: none;
+}
+
+/* About */
+.about {
+	background-color: #BDBDBD;
+	background-image: url('../img/amsterdam_plain_bg_mobile.jpg');
+}
+
+.card {
+	background-color: rgba(240, 240, 240, 0.4);
+	padding: 0 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.section_title {
+	padding-top: 100px;
+	padding-bottom: 20px;
+	font-size: 34px;
+}
+
+.paragraph_title {
+	margin-top: 50px;
+	font-size: 26px;
+}
+
+.paragraph_title,
+.par {
+	text-align: left;
+}
+
+.par {
+	font-size: 20px;
+}
+
+/* Reviews */
+
+.cards_holder {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.review_name {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.review_text {
+	font-size: 18px;
+	text-align: left;
+}
+
+.review_card {
+	padding: 10px;
+	margin: 30px;
+	width: 40%;
+}
+
+.review_date {
+	text-align: right;
+	padding-right: 5px;
+}
+
+/* Contacts */
+
+.contacts{
+	background-color: #BDBDBD;
+	padding-bottom: 75px;
+}
+
+.contacts_wrapper {
+	display: flex;
+}
+
+iframe {
+	border-width: 0px;
+}
+
+.contacts_wrapper p {
+	font-size: 22px;
+}
+
+.text_contacts {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 30px;
+}
+
+.address_title,
+.telephone_title {
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 0;
+}
+
+.address {
+	margin-top: -20px;
+	width: 100%;
+	text-align: left;
+}
+
+.telephone {
+	margin-top: -20px;
+	text-align: left;
+}
+
+/* Footer */
+.footer {
+	background-color: #808080;
+}
+
+.footer_wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+
+.footer a {
+	color: #000;
+	text-decoration: none;
+}
+
+.logo {
+	width: 150px;
+	font-weight: 700;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.footer_nav {
+	display: flex;
+	margin-top: 15px;
+	margin-right: 350px;
+}
+
+.footer_nav a {
+	margin-left: 75px;
+	transition: all ease 0.3s;
+}
+
+.footer_nav a:hover {
+	transform: scale(1.2);
+	color: #bdbdbd;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	.header_title {
+		font-size: 13vh;
+	}
+
+	.nav li {
+		width: 180px;
+	}
+
+	.footer_nav a {
+	margin-left: 50px;
+	}
+
+	.footer_nav {
+	margin-right: 150px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+		text-align: center;
+	}
+
+	.header_title {
+		font-size: 10vh;
+	}
+
+	.nav li {
+		width: 150px;
+	}
+
+	.footer_nav a {
+	margin-left: 30px;
+	}
+
+	.footer_nav {
+	margin-right: 100px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+
+	.header_title {
+		font-size: 7vh;
+	}
+
+	.nav li {
+		width: 120px;
+	}
+
+	.review_card {
+	padding: 10px;
+	margin: 0;
+	margin-bottom: 30px;
+	width: 100%;
+}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+
+	.header_title {
+		font-size: 4vh;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.dropdown {
+		display: block;
+	}
+
+	.dropbtn {
+    background-color: transparent;
+    color: #fff;
+    padding: 16px;
+    margin-top: 45px;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	    background-color: transparent;
+	}
+
+	.dropdown {
+		margin-left: auto;
+		margin-right: 0;
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    min-width: 160px;
+	    overflow: auto;
+	    top: -150px;
+	    right: -50px;
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+		background-color: rgba(255, 255, 255, 0.75);
+	    color: #000;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    text-align: center;
+	    display: block;
+	    border: 2px solid black;
+	}
+
+	.dropdown-content a:nth-child(1),
+	.dropdown-content a:nth-child(2),
+	.dropdown-content a:nth-child(3) {
+		border-bottom: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.nav_tours:hover {
+		background-color: rgba(54, 217, 100, 0.75);
+	}
+
+	.nav_about:hover {
+		background-color: rgba(224, 123, 33, 0.75);
+	}
+
+	.nav_reviews:hover {
+		background-color: rgba(176, 64, 247, 0.75);
+	}
+
+	.nav_contacts:hover {
+		background-color: rgba(224, 33, 33, 0.75);
+	}
+
+	.contacts_wrapper {
+		flex-direction: column;
+	}
+
+	.text_contacts p{
+		text-align: center;
+	}
+
+	iframe {
+		width: 250px;
+		height: 250px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.logo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer_wrapper {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	.footer_nav {
+		flex-direction: column;
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+
+	.footer_nav a {
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 15px;
+	}
+}
